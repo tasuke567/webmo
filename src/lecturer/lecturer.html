@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS &amp; IT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Noto+Sans+Thai&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        
+
+        /*********** START NAV MENU ****************/
+        nav {
+
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-block;
+            font-size: 1em;
+            border-radius: 0.35em;
+            box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+            padding: 0 1.5em 0 1.5em;
+
+        }
+
+        nav ul li {
+            display: block;
+            /*position: relative;*/
+            float: left;
+            text-align: center;
+            padding: 0 2em 0 2em;
+
+        }
+
+        #line {
+            border-bottom: thin solid rgba(255, 255, 255, 0.25);
+        }
+
+        nav li ul {
+            display: none;
+            background-color: #003366;
+            opacity: 0.9;
+        }
+
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 30px 5px 30px;
+            color: #ffffff;
+            white-space: nowrap;
+            text-align: center;
+            letter-spacing: 0.25em;
+            height: 3em;
+            line-height: 3em;
+            -moz-transition: all .25s ease-in-out;
+            -webkit-transition: all .25s ease-in-out;
+            -o-transition: all .25s ease-in-out;
+            -ms-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+            outline: 0;
+        }
+
+        #current {
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: coral;
+        }
+
+        nav li:hover ul {
+            display: block;
+            position: absolute;
+        }
+
+        nav li:hover li {
+            float: none;
+        }
+
+       
+        nav ul li ul li a {
+            text-align: left;
+            /* Top-level items are centered, but nested list items are left-aligned */
+        }
+
+
+        /*-------------------------article------------------------------------*/
+        article {
+            /*display:block; เพิ่มเพื่อทำ responsive*/
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        article>section {
+
+            padding: 0 15% 0 15%;
+
+        }
+
+        article a:link,
+        article a:visited {
+            text-decoration: none;
+            color: #363636;
+        }
+
+        article a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        article h3 {
+            border-bottom: dotted 0.1em tomato;
+            color: tomato;
+            margin: 1.5em 0 2em 0;
+        }
+
+        article h4 {
+            border-bottom: dotted 1px silver;
+            margin: 1em;
+            color: #33C;
+        }
+
+        #font12 {
+            font-size: 12px;
+        }
+
+        #img {
+            float: left;
+            width: 150px;
+            margin: 5px 15px;
+        }
+
+        .pd {
+            padding: 0 5px 0 5px;
+        }
+
+        article dl {
+            margin: 5px;
+            margin-left: 130px;
+            color: #363636;
+        }
+
+        article dt {
+            /*text-decoration: underline;*/
+            font-weight: bold;
+            color: midnightblue;
+            padding-top: 0.5em;
+        }
+
+        article dd {
+            padding-bottom: 1em;
+        }
+
+        #nav-border {
+            border-bottom: dotted 1px silver;
+            text-align: center;
+        }
+
+        #iframe-course {
+            width: 100%;
+            height: 700px;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'IBM Plex Sans Thai Looped', sans-serif; background-color: #F3FBFB;">
+    <nav class="navbar navbar-expand-lg navbar-dark pb-4 justify-content-center"
+        style="background-color: #053361; color:#F3FBFB;">
+        <div class="container-fluid justify-content-center">
+            <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon justify-content-center"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"></a>
+                <ul class="navbar-nav  justify-content-center">
+                    <li class="nav-item justify-content-center">
+                        <a class="nav-link active" style="color:#F3FBFB;" aria-current="page" href="../../index.html">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item justify-content-center">
+                        <a class="nav-link dropdown-toggle justify-content-center" style="color:#F3FBFB;"
+                            data-bs-toggle="dropdown" role="button" aria-expanded="false"
+                            href="../../index.html">เกี่ยวกับเรา</a>
+                        <ul class="dropdown-menu justify-content-center" style="background-color:#F3FBFB;">
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;"
+                                    href="../corse/corse.html">หลักสูตร</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;"
+                                    href="../study_plan/study_plan.html">แผนการเรียน</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;"
+                                    href="../calendar/calendar.html">ปฏิทินการศึกษา</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;"
+                                    href="../guide/guide.html">คู่มือนักศึกษา</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;" href="../rule/rule.html">ระเบียบ
+                                    มทรก.</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color:#F3FBFB;" href="../lecturer/lecturer.html">บุคลากร</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"
+                            style="color:#F3FBFB;" href="#">ดาวน์โหลด</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;" href="../teacher/teacher.html">อาจารย์</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="background-color:#F3FBFB;" href="../student/student.html">นักศึกษา</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid justify-content-center"
+        style=" background-color: #053361; color:#C0D9E7; text-align: center;">
+        <div class="bg-gradient bg-opacity-10 bg-transparent justify-content-center">
+            <h1 class="mb-4 justify-content-center">COMPUTER SCIENCE & INFORMATION TECHNOLOGY</h1>
+            <p>Faculty of Science and Technology | Rajamangala University of Technology Krungthep</p>
+        </div>
+    </div>
+        <!-- Page content -->
+        <div class="container " style="background-color:#F3FBFB;">
+            <section>
+                <h3>คณาจารย์</h3>
+
+                <img id="img" src="../img/lecturer/piya-1.jpg">
+                <h4 style="margin-left: 9em;">ดร.ปิยะ ถิรพันธุ์เมธี</h4>
+                <p>Piya Thirapanmethee, Ph.D.</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>ปร.ด.(เทคโนโลยีสารสนเทศและการสื่อสารเพื่อการศึกษา)
+                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>
+                            Ph.D. (Information and Communication Technology for Education) <br>
+                            King Mongkut's University of Technology North Bangkok</dd>
+                        <br>
+                        <dd>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>
+                            M.Sc. (Information Technology) King Mongkut's University of Technology Thonburi</dd>
+                        <br>
+                        <dd>อส.บ. (เทคโนโลยีอิเล็กทรอนิกส์) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง<br>
+                            B.Ind.Tech. (Electronics) King Mongkut's Institute of Technology Ladkrabang </dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <!--<dd>&raquo; </dd>
+                <dd>&raquo; </dd>-->
+                        <dd>» โครงสร้างข้อมูล (Data Structure)</dd>
+                        <dd>» เครือข่ายคอมพิวเตอร์ (Computer Network)</dd>
+                        <dd>» ระบบปฏิบัติการ (Operating System)</dd>
+                        <dd>» วิศวกรรมซอฟต์แวร์ (Software Engineering)</dd>
+                        <dd>» ความมั่นคงของระบบสารสนเทศ (Information System Security)</dd>
+                        <dd>» การจัดระเบียบคอมพิวเตอร์และสถาปัตยกรรม(Computer Organization and Architecture)</dd>
+                        <dd>» ดิจิทัลอิเล็กทรอนิกส์ (Digital Electronics)</dd>
+                        <dd>» การประมวลสัญญาณดิจิตอล (Digital Signal Processing)</dd>
+                        <dd>» การจัดการองค์กรและระบบสารสนเทศ (Management Information System in Organization)</dd>
+                        <dt>สาขางานวิจัย</dt>
+                        <dd>» Computer Network</dd>
+                        <dd>» Information and Communication Technology for Education</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» รัชนี วงศ์มาตย์, สมฤดี เทียมมีเชาว์ และปิยะ ถิรพันธุ์เมธี.
+                            &nbsp;&nbsp;2563.&nbsp;&nbsp;“ระบบลงชื่อเข้าชั้นเรียนด้วยราสเบอรี่พายและคิวอาร์โค้ด”.
+                            <b>วารสารวิทยาศาสตร์และเทคโนโลยี มทร. กรุงเทพ.</b>&nbsp;&nbsp;ปีที่ 1, ฉบับที่ 2: 12-18.
+                        </dd>
+
+                        <dd>» ปิยะ ถิรพันธุ์เมธี และ พัลลภ
+                            พิริยะสุรวงศ์.&nbsp;&nbsp;2557.&nbsp;&nbsp;“การพัฒนารูปแบบเฟรมเวิร์คธนาคารข้อสอบบนระบบประมวลผลแบบกลุ่มเมฆ”
+                            <b>วารสารวิชาการและวิจัยมหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร.</b>&nbsp;&nbsp;ปีที่ 8, ฉบับที่ 2
+                            (กันยายน): .
+                        </dd>
+
+                        <dd>» ปิยะ ถิรพันธุ์เมธี และ พัลลภ
+                            พิริยะสุรวงศ์.&nbsp;&nbsp;2556.&nbsp;&nbsp;“ระบบประมวลผลแบบกลุ่มเมฆกับสถาบันการศึกษา”
+                            <b>วารสารวิจัยมหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</b>&nbsp;&nbsp;ปีที่ 7, ฉบับที่ 2 (กรกฎาคม
+                            – ธันวาคม): .
+                        </dd>
+
+                        <dd>» ปิยะ
+                            ถิรพันธุ์เมธี.&nbsp;&nbsp;2556.&nbsp;&nbsp;“มาตรฐานผู้ให้บริการระบบประมวลผลแบบกลุ่มเมฆ”
+                            <b>วารสารการอาชีวะและเทคนิคศึกษา.</b>&nbsp;&nbsp;ปีที่ 3, ฉบับที่ 6 (มิถุนายน-ธันวาคม): .
+                        </dd>
+
+                        <dd>» ปิยะ ถิรพันธุ์เมธี และ ณมน
+                            จีรังสุงรรณ.&nbsp;&nbsp;2556.&nbsp;&nbsp;“รูปแบบการเรียนวิชาโครงงานโดยอาศัยความร่วมมือกับสถานประกอบการผ่านแฟ้มสะสมงานอิเล็กทรอนิกส์.”
+                            <b>วารสารวิทยสุวรรณภูมิ.</b>&nbsp;&nbsp;ปีที่ 1, ฉบับที่ 2 (มกราคม – มีนาคม)<!--: เลขหน้า-->
+                            .
+                        </dd>
+
+                        <dd>
+                            <h4 id="tab">International Conferences</h4>
+                        </dd>
+                        <dd>» Piya Thirapanmethee, Jirayu Tancharoen, Khananat Sae-Tang,
+                            Nilubon Bootchai, Sirion Nutphadung, and Orasa
+                            Patsadu.&nbsp;&nbsp;2023.&nbsp;&nbsp;"Abnormal Corner of Mouth Fall Detection of Stroke
+                            Patient Using Camera."&nbsp;&nbsp;<b>In Proc. Of the the 19th International Conference on
+                                Computing and Information Technology (IC2IT 2023)</b>,&nbsp;&nbsp;Lecture Notes in
+                            Networks and Systems 679,
+                            https://doi.org/10.1007/978-3-031-30474-3_3, 2023, pp.27-39.</dd>
+
+                        <dd>» Monrada Sirimongkol, Piya Thirapanmetee, Sureeporn Nualnim and Sudjai
+                            Ngamsuriyapong.&nbsp;&nbsp;2017.&nbsp;&nbsp;"Development of Learning Media using Augmented
+                            Reality."&nbsp;&nbsp;<b>The 11th National Conference and 2017-1 International Conference on
+                                Applied Computer Technology and Information Systems and 2017-1 National Conference on
+                                Businese Administration.</b>&nbsp;&nbsp; January 25.&nbsp;&nbsp;Southeast Bangkok
+                            College: 6-9.</dd>
+
+                        <dd>» Pattarawan Sea-Heng and Piya Thirapanmetee.&nbsp;&nbsp;2016.&nbsp;&nbsp;"Development of
+                            Electronic Media Using Augmented Reality for Thai Lessons of Primary 2." <b>Proceedings of
+                                the 7th Rajamangala University of Technology International Conference (7th
+                                RMUTIC).</b>&nbsp;&nbsp;August 24-26.&nbsp;&nbsp;Rajamangala University of Technology
+                            Krungthep.</dd>
+
+                        <dd>» Piya Thirapanmethee and Pallop Piriyasurawong.&nbsp;&nbsp;2014.&nbsp;&nbsp;“The
+                            Development of Item Bank Software Framework” <b>The 5th Rajamangala University of Technology
+                                International Conference (5th RMUTIC).</b>&nbsp;&nbsp;23-25 July Rajamangala University
+                            of Technology Suvarnabhumi.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» สุเมธ ใจเย็น, วรัญญา ทัศนศร, วิภาวรรณ อากาศวรรธนะ และปิยะ
+                            ถิรพันธุ์เมธี.&nbsp;&nbsp;2560.&nbsp;&nbsp;"การพัฒนาสื่ออิเล็กทรอนิกส์โดยใช้เทคโนโลยีเสมือนจริง
+                            วิชาสุขศึกษา ระดับชั้นประถมศึกษาปีที่
+                            3."&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติด้านวิทยาการจัดการ ประจำปี 2560 ครั้งที่
+                                1.</b>&nbsp;&nbsp;16 มิถุนายน.&nbsp;&nbsp;มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา: 346-357.
+                        </dd>
+
+                        <dd>» มนรดา ศิริมงคล, ปิยะ ถิรพันธุ์เมธี, สิริอร นุชผดุง และสุเมธ
+                            ใจเย็น.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบพิพิธภัณฑ์ศิลปินภาพถ่ายโดยใช้เทคโนโลยีเสมือนจริง."&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี
+                                ครั้งที่ 1.</b>&nbsp;&nbsp;19 มกราคม.&nbsp;&nbsp;มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ
+                            ศูนย์พระนครศรีอยุธยา หันตรา: 159-168.</dd>
+
+                        <dd>» ปิยะ ถิรพันธุ์เมธี และ พัลลภ
+                            พิริยะสุรวงศ์.&nbsp;&nbsp;2556.&nbsp;&nbsp;“รูปแบบระบบประมวลผลแบบกลุ่มเมฆสำหรับสถาบันการศึกษา”
+                            <b>การประชุมวิชาการระดับชาติด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ
+                                ครั้งที่9.</b>&nbsp;&nbsp;9-10 พฤษภาคม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ.
+                        </dd>
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Srisuda-1.jpg">
+                <h4 style="margin-left: 9em;">นางศรีสุดา สรนันต์ศรี</h4>
+                <p>Mrs. Srisuda Soranunsri</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>ค.อ.ม. (คอมพิวเตอร์และเทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี <br>
+                            M.S.Tech.Ed.(Computer and Information Technology) King Mongkut's University of Technology
+                            Thonburi </dd>
+                        <br>
+                        <dd>วท.บ. (ศาสตร์คอมพิวเตอร์) มหาวิทยาลัยรามคำแหง <br>
+                            B.Sc. (Computer Science) Ramkhamhaeng University</dd>
+
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» หลักการเขียนโปรแกรมคอมพิวเตอร์ (Principle of Computer Programming)</dd>
+                        <dd>» ระบบฐานข้อมูล (Database System)</dd>
+                        <dd>» ระบบจัดการฐานข้อมูล (Database Management System)</dd>
+                        <dd>» ระเบียบวิธีการเขียนโปรแกรม (Programming Methodology)</dd>
+                        <dd>» การวิเคราะห์และออกแบบระบบ (System Analysis and Design)</dd>
+                        <dd>» วิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศเบื้องต้น (Introduction to Computer Science and
+                            Information Technology)</dd>
+                        <!--<dt>สาขางานวิจัย</dt>
+      			<dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» นพรัตน์ ภัยวิมุติ และ ศรีสุดา
+                            สรนันต์ศรี.&nbsp;&nbsp;2554.&nbsp;&nbsp;"พัฒนาโปรแกรมระบบฐานข้อมูลงานฝึกอบรม
+                            กรณีศึกษามหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ."&nbsp;&nbsp;<b>วารสารวิจัยมหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</b>&nbsp;&nbsp;ปีที่
+                            5.&nbsp;&nbsp;ฉบับที่ 1 (มกราคม - มิถุนายน): 18-23.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชนาเนตร อรรถยุกติ, ชาญวิทย์ มุสิกะ, ศรีสุดา สรนันต์ศรี และนพรัตน์
+                            ภัยวิมุติ.&nbsp;&nbsp;2564.&nbsp;&nbsp;"ระบบควบคุมการให้อาหารไก่ผ่านสมาร์ทโฟนระบบปฏิบัติการแอนดรอยด์
+                            กรณีศึกษาศูนย์เรียนรู้บ้านท่าทอง อำเภอเดิมบางนางบวช
+                            จังหวัดสุพรรณบุรี".&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติเชิงสร้างสรรค์
+                                ราชมงคลกรุงเทพวิชาการ 2564 ครั้งที่ 5.</b> 4-6 สิงหาคม.
+                            มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ ออนไลน์. หน้า 166-172.</dd>
+
+                        <dd>» ศรีสุดา สรนันต์ศรี, นพรัตน์ ภัยวิมุติ, เบญจมาศ ตัณฑะเตมีย์ และพรพรรณ
+                            ตระกูลขจรศักดิ์.&nbsp;&nbsp;2563.&nbsp;&nbsp;"การพัฒนาระบบสารสนเทศเพื่อบริหารจัดการระบบการตลาดออนไลน์ของเกษตกรผู้เพาะเลี้ยงปลาดุกสู่การยกระดับเป็นผู้ประกอบการ
+                            4.0 กรณีกลุ่มเกษตรกรผู้เพาะเลี้ยงปลาดุก บ้านดอนตะเคียน ต.ยุ้งทะลาย อ.อู่ทอง
+                            จ.สุพรรณบุรี".&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติเชิงสร้างสรรค์ราชมงคลกรุงเทพวิชาการ
+                                ครั้งที่ 3.</b>&nbsp;&nbsp;5-7 สิงหาคม.&nbsp;&nbsp; โรงแรมแกรนด์แปซิฟิก ซอฟเฟอริน
+                            รีสอร์ทแอนด์สปา ชะอำ จ.เพชรบุรี: 125-132.</dd>
+                        <dd>» ศรีสุดา สรนันต์ศรี, นพรัตน์ ภัยวิมุติ, รสชพร จันทร์โถ และ ศรวิษฐ์ นาคเกษม. 2562.
+                            “การพัฒนาระบบสารสนเทศเพื่อบริหารจัดการมะม่วงส่งออกต่างประเทศ ด้วยคิวอาร์โค้ด
+                            กรณีศึกษากลุ่มมะม่วงบ้านท่าทอง จ.สุพรรณบุรี”.
+                            <b>การประชุมวิชาการระดับชาติเชิงสร้างสรรค์ราชมงคลกรุงเทพวิชาการ.</b>
+                            โรงแรมลอฟต์มาเนียบูติคโฮเทล จังหวัดชุมพร. 19-21 มิถุนายน: 208-215.
+                        </dd>
+                        <dd>» นพรัตน์ ภัยวิมุติ, ศรีสุดา สรนันต์ศรี, ธนพัต สังข์ทอง และวินัย จันทร์รักษ์. 2562.
+                            “ระบบควบคุมการให้น้ำและปุ๋ย สวนมะม่วงของเกษตรกร ผ่านสมาร์ทโฟนบนระบบปฏิบัติการแอนดรอยด์”.
+                            <b>การประชุมวิชาการระดับชาติ IAMBEST. ครั้งที่ 4.</b> โรงแรม Tinidee Hotel@Ranong อำเภอเมือง
+                            จังหวัดระนอง. 30-31 พฤษภาคม: 857-867.
+                        </dd>
+                        <dd>» ศาศวัต จำเริญสุข, อริสรา ศิริพราหมนุกูล, ศรีสุดา สรนันต์ศรี และนพรัตน์ ภัยวิมุติ. 2562.
+                            “การพัฒนาระบบสารสนเทศเพื่อส่งเสริมอาหารฮาลาลและการท่องเที่ยวเชิงวัฒนธรรมในสังคมเมืองด้วยคิวอาร์โค้ด
+                            กรณีศึกษาชุมชนมุสลิม ตลาดริมคลองสวนหลวงเจริญกรุง 103”.
+                            <b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี. ครั้งที่ 3 (3rd NCOST).</b>
+                            คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา
+                            จังหวัดพระนครศรีอยุธยา. 18 มกราคม.
+                        </dd>
+                        <dd>» นพรัตน์ ภัยวิมุติ, ศรีสุดา สรนันต์ศรี, ศราวุฒิ คลังภูเขียว และยุทธนา
+                            เนียมอ่า.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบสารสนเทศเพื่อการจัดการงานบริการวิชาการ."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25 มกราคม.&nbsp;&nbsp;
+                            วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 209-214.</dd>
+                        <!--<dd>&raquo;</dd>-->
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/chanwit-1.jpg">
+                <h4 style="margin-left: 9em;">นายชาญวิทย์ มุสิกะ</h4>
+                <p>Mr. Chanwit Musika</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>วท.ม. (เทคโนโลยีอินเทอร์เน็ตและสารสนเทศ) มหาวิทยาลัยนเรศวร <br>
+                            M.Sc. (Internet and Information Technology) Naresuan University</dd>
+                        <br>
+                        <dd>ค.อ.บ. (วิศวกรรมคอมพิวเตอร์) สถาบันเทคโนโลยีราชมงคล <br>
+                            B.S.Tech.Ed. (Computer Engineering) Rajamangala Institute of Technology</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» ไมโครคอนโทรลเลอร์ (Microcontroller)</dd>
+                        <dd>» ระบบฝังตัว (Embedded System)</dd>
+                        <dd>» การศึกษาเฉพาะเรื่องทางวิทยาการคอมพิวเตอร์ (Selected Topic in Computer Science)</dd>
+                        <dd>» ระบบไมโครคอมพิวเตอร์และการต่อประสาน (Microcomputer System and Interfacing)</dd>
+                        <dd>» เทคโนโลยีและการประยุกต์ใช้อินเทอร์เน็ต (Internet Technology and Applications)</dd>
+                        <!--<dt>สาขางานวิจัย</dt>
+            	<dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชาญวิทย์ มุสิกะ, ชนาเนตร อรรถยุกติ และพงศกร
+                            อัครธรรมกุล.&nbsp;&nbsp;2562.&nbsp;&nbsp;"ล็อคเกอร์เก็บกุญแจควบคุมการทำงานด้วยอาร์เอฟไอดี."&nbsp;&nbsp;<b>วารสาร
+                                สจล.ชุมพรเขตอุดมศักดิ์ ฉบับวิทยาศาสตร์และเทคโนโลยี.&nbsp;&nbsp;ปีที่
+                                2.</b>&nbsp;&nbsp;ฉบับที่ 1 (มกราคม - ธันวาคม): 50-56.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>»ชนาเนตร อรรถยุกติ, ชาญวิทย์ มุสิกะ, ศรีสุดา สรนันต์ศรี และนพรัตน์ ภัยวิมุติ. 2564.
+                            "ระบบควบคุมการให้อาหารไก่ผ่านสมาร์ทโฟนระบบปฏิบัติการแอนดรอยด์
+                            กรณีศึกษาศูนย์เรียนรู้บ้านท่าทอง อำเภอเดิมบางนางบวช จังหวัดสุพรรณบุรี".
+                            <b>การประชุมวิชาการระดับชาติเชิงสร้างสรรค์ ราชมงคลกรุงเทพวิชาการ 2564 ครั้งที่ 5</b>. 4-6
+                            สิงหาคม. มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ ออนไลน์: 166-172.
+                        </dd>
+                        <dd>» ชาญวิทย์ มุสิกะ, ชนาเนตร อรรถยุกติ, สิริอร นุชผดุง และวัชรพงษ์
+                            ทัพจีน.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบควบคุมเป้าพลิกด้วยไมโครคอนโทรลเลอร์."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25
+                            มกราคม.&nbsp;&nbsp;วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 284-289.</dd>
+                        <!--<dd>&raquo;</dd>-->
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Thawadchai-1.jpg">
+                <h4 style="margin-left: 9em;">ดร.ธวัชชัย สารวงษ์</h4>
+                <p>Thawatchai Sarawong, Ph.D.</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>ปร.ด. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ <br>
+                            Ph.D. (Information Technology) King Mongkut's University of Technology North Bangkok
+                        </dd>
+                        <br>
+                        <dd>ค.อ.ม. (เทคโนโลยีคอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าพระนครเหนือ <br>
+                            M.S.Tech.Ed. (Computer Technology) King Mongkut’s Institute of Technology North Bangkok</dd>
+                        <br>
+                        <dd>ค.อ.บ. (วิศวกรรมคอมพิวเตอร์) สถาบันเทคโนโลยีราชมงคล <br>
+                            B.S.Tech.Ed. (Computer Engineering) Rajamangala Institute of Technology</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» การประมวลผลแฟ้มข้อมูล (File Processing)</dd>
+                        <dd>» ระบบปฏิบัติการ (Operating System)</dd>
+                        <dd>» หลักการเขียนโปรแกรมคอมพิวเตอร์ (Principle of Computer Programming)</dd>
+                        <!--<dt>สาขางานวิจัย</dt>
+      			<dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ดรุณี พาดี, อาจารีย์ ธนเศรษฐ์สุธี และธวัชชัย สารวงษ์. 2563.
+                            “การประยุกต์ใช้เทคนิคเหมืองข้อมูลในการวิเคราะห์ข้อมูลการท่องเที่ยวทางภาคเหนือตอนบน”.
+                            <b>วารสารคณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ. ฉบับที่ 1.</b>
+                            มกราคม-มิถุนายน.
+                        </dd>
+                        <dd>» ธวัชชัย สารวงษ์ และศิรปัฐช์
+                            บุญครอง.&nbsp;&nbsp;2555.&nbsp;&nbsp;"การประมวลผลเชิงกลุ่มเมฆแบบเฉพาะกิจ."&nbsp;&nbsp;<b>วารสารพัฒนาเทคนิคศึกษา.</b>&nbsp;&nbsp;ปีที่
+                            24, ฉบับที่ 83 (กรกฎาคม-กันยายน): 100-107.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ธวัชชัย สารวงษ์ และรุจน์
+                            วังรุ่งอรุณ.&nbsp;&nbsp;2558.&nbsp;&nbsp;"การประยุกต์ใช้โพรโทคอลแคนบัสกับการควบคุมตู้ล็อกเกอร์."&nbsp;&nbsp;<b>การประชุมทางวิชาการระดับชาติด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ
+                                ครั้งที่ 11.</b>&nbsp;&nbsp;2-3 กรกฎาคม.&nbsp;&nbsp;โรงแรมอโนมา กรุงเทพมหานคร. </dd>
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Kulchaya.png">
+                <h4 style="margin-left: 9em;">นางกุลชยา พงษ์แสวง</h4>
+                <p>Mrs. Kulchaya Pongsawaeng</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>กศ.ม. (ธุรกิจศึกษา) มหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร <br>
+                            M.Ed. (Business Education) Srinakharinwirot University</dd>
+                        <br>
+                        <dd>บธ.บ. (การจัดการทั่วไป) มหาวิทยาลัยสุโขทัยธรรมาธิราช <br>
+                            B.B.A. (General Management) Sukhothai Thammathirat Open University</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</dd>
+                        <dd>» โปรแกรมสำเร็จรูป</dd>
+                        <dt>สาขางานวิจัย</dt>
+                        <dd>สาขาวิชามนุษยศาสตร์และสังคมศาสตร์</dd>
+                        <dd>เทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» วรรณา
+                            พงษ์แสวง.&nbsp;&nbsp;2552.&nbsp;&nbsp;“การประเมินผลโครงการพัฒนาสมรรถนะนักวิจัยมหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ”&nbsp;<b>วารสารวิจัย
+                                มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ</b>.&nbsp;&nbsp;ปีที่ 3,&nbsp;ฉบับที่ 1
+                            (มกราคม-มิถุนายน 2552): 87-92.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» สถิระ ชัยชนะกลาง, กุลชยา พงษ์แสวง, พิชญ์สินี สุรินธรรม และน้ำทิพย์
+                            ผุดผ่อง.&nbsp;&nbsp;2560.&nbsp;&nbsp;"เครื่องมือออกแบบวงจรซีเควนเชียล
+                            แบบซิงโครนัส."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25
+                            มกราคม.&nbsp;&nbsp;วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 314-318.</dd>
+
+                        <dd>» กุลชยา
+                            พงษ์แสวง.&nbsp;&nbsp;2554.&nbsp;&nbsp;“การพัฒนาและหาประสิทธิภาพบทเรียนคอมพิวเตอร์ช่วยสอนรายวิชาภาษาอังกฤษ
+                            1”&nbsp;<b>การประชุมวิชาการระดับชาติด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์ ครั้งที่
+                                2.</b>&nbsp;&nbsp;17 กุมภาพันธ์.&nbsp;มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</dd>
+
+                        <dd>» วรรณา
+                            พงษ์แสวง.&nbsp;&nbsp;2544.&nbsp;&nbsp;<b>ผลการใช้บทเรียนคอมพิวเตอร์ช่วยสอนในวิชาภาษีอากรของนักศึกษาแผนกวิชาเลขานุการ
+                                คณะวิชาบริหารธุรกิจ วิทยาเขตเทคนิคกรุงเทพฯ
+                                สถาบันเทคโนโลยีราชมงคล.</b>&nbsp;&nbsp;มหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร.</dd>
+
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Noppharat-1.jpg">
+                <h4 style="margin-left: 9em;">ผู้ช่วยศาสตราจารย์นพรัตน์ ภัยวิมุติ</h4>
+                <p>Asst. Prof. Nopparat Paivimut</p>
+                <div id="font12">
+                    ผู้ช่วยอธิการบดี มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ,<br>
+                    ผู้จัดการคลินิกเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>ศษ.ม. (เทคโนโลยีและสื่อสารการศึกษา) มหาวิทยาลัยสุโขทัยธรรมาธิราช <br>
+                            M.Ed (Educational Technology and Communication) Sukhothai Thammathirat Open University</dd>
+                        <br>
+                        <dd>บธ.บ. (คอมพิวเตอร์ธุรกิจ) มหาวิทยาลัยสยาม <br>
+                            B.B.A (Business Computer) Siam University</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» การเขียนโปรแกรมคอมพิวเตอร์เบื้องต้น</dd>
+                        <dd>» โปรแกรมสำเร็จรูป</dd>
+                        <dd>» ระบบฐานข้อมูลเบื้องต้น</dd>
+                        <dd>» คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</dd>
+                        <dd>» คอมพิวเตอร์เบื้องต้นและภาษาเบสิก</dd>
+                        <dd>» การโปรแกรมคอมพิวเตอร์เบื้องต้น(ภาษาเทอร์โบปาสคาล)</dd>
+                        <dd>» การโปรแกรมคอมพิวเตอร์เบื้องต้น(ภาษาซี)</dd>
+                        <dd>» การโปรแกรมคอมพิวเตอร์เบื้องต้น(ภาษาวิชวลเบสิก)</dd>
+                        <dt>สาขางานวิจัย</dt>
+                        <dd>» สาขาวิชามนุษย์ศาสตร์และสังคมศาสตร์</dd>
+                        <dd>» สาขาการประยุกต์เทคโนโลยีคอมพิวเตอร์เละระบบสารสนเทศทางการศึกษา</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» นพรัตน์ ภัยวิมุติ และ ศรีสุดา
+                            สรนันต์ศรี.&nbsp;&nbsp;2554.&nbsp;&nbsp;"พัฒนาโปรแกรมระบบฐานข้อมูลงานฝึกอบรม
+                            กรณีศึกษามหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ."
+                            <b>วารสารวิจัยมหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</b>&nbsp;&nbsp;ปีที่ 5, ฉบับที่ 1 (มกราคม
+                            - มิถุนายน): 18-23.
+                        </dd>
+
+                        <dd>» นพรัตน์
+                            ภัยวิมุติ.&nbsp;&nbsp;2551.&nbsp;&nbsp;"สภาพปัญหาและความต้องการในการใช้ระบบฐานข้อมูลงานวิจัยแบบออนไลน์ของอาจารย์
+                            มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ."
+                            <b>วารสารวิจัยมหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</b>&nbsp;&nbsp;ปีที่ 2, ฉบับที่ 2 (กรกฎาคม
+                            - ธันวาคม): 59-64.
+                        </dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชนาเนตร อรรถยุกติ, ชาญวิทย์ มุสิกะ, ศรีสุดา สรนันต์ศรี และนพรัตน์
+                            ภัยวิมุติ.&nbsp;&nbsp;2564.&nbsp;&nbsp;"ระบบควบคุมการให้อาหารไก่ผ่านสมาร์ทโฟนระบบปฏิบัติการแอนดรอยด์
+                            กรณีศึกษาศูนย์เรียนรู้บ้านท่าทอง อำเภอเดิมบางนางบวช
+                            จังหวัดสุพรรณบุรี".&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติเชิงสร้างสรรค์
+                                ราชมงคลกรุงเทพวิชาการ 2564 ครั้งที่ 5.</b> 4-6 สิงหาคม.
+                            มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ ออนไลน์. หน้า 166-172.</dd>
+
+                        <dd>» นพรัตน์ ภัยวิมุติ, ศรีสุดา สรนันต์ศรี, ศราวุฒิ คลังภูเขียว และยุทธนา
+                            เนียมอ่า.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบสารสนเทศเพื่อการจัดการงานบริการวิชาการ."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25 มกราคม.&nbsp;&nbsp;
+                            วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 209-214.</dd>
+
+                        <dd>» นพรัตน์ ภัยวิมุติ และ ชัยศักดิ์
+                            คล้ายแดง.&nbsp;&nbsp;2557.&nbsp;&nbsp;<b>การพัฒนารูปแบบการสร้างผู้ประกอบการใหม่(NEC)
+                                กรณีศึกษา หลักสูตรธุรกิจผสมเครื่องดื่ม เพื่อสุขภาพ
+                                .</b>&nbsp;&nbsp;มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</dd>
+
+                        <dd>» นพรัตน์
+                            ภัยวิมุติ.&nbsp;&nbsp;2556.&nbsp;&nbsp;<b>การพัฒนารูปแบบการบ่มเพาะนักศึกษาสู่การเป็นผู้ประกอบการใหม่(NEC).</b>&nbsp;&nbsp;มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.
+                        </dd>
+
+                        <dd>» นพรัตน์
+                            ภัยวิมุติ.&nbsp;&nbsp;2549.&nbsp;&nbsp;<b>การพัฒนาและหาประสิทธิภาพบทเรียนคอมพิวเตอร์ช่วยสอนรายวิชา
+                                คอมพิวเตอร์พื้นฐาน
+                                มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</b>&nbsp;&nbsp;สถาบันเทคโนโลยีราชมงคลกรุงเทพ
+                            วิทยาเขตเทคนิคกรุงเทพ. </dd>
+
+                        <dd>» นพรัตน์
+                            ภัยวิมุติ.&nbsp;&nbsp;2548.&nbsp;&nbsp;<b>ชุดการเรียนด้วยสื่ออิเล็กทรอนิกส์แบบอิงประสบการณ์
+                                เรื่องการพัฒนาระบบงานทางคอมพิวเตอร์ วิชาการโปรแกรมคอมพิวเตอร์เบื้องต้น
+                                มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ.</b>&nbsp;&nbsp;มหาวิทยาลัยสุโขทัยธรรมาธิราช.</dd>
+
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Sureeporn-2.PNG">
+                <h4 style="margin-left: 9em;">นางสาวสุรีพร นวลนิ่ม</h4>
+                <p>Ms. Sureeporn Nualnim</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>ค.อ.ม. (เทคโนโลยีคอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าพระนครเหนือ <br>
+                            M.S.Tech.Ed. (Computer Technology) King Mongkut’s Institute of Technology North Bangkok</dd>
+                        <br>
+                        <dd>ค.อ.บ. (วิศวกรรมคอมพิวเตอร์) สถาบันเทคโนโลยีราชมงคล <br>
+                            B.S.Tech.Ed. (Computer Engineering) Rajamangala Institute of Technology</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» วิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศเบื้องต้น (Introduction to Computer Science and
+                            Information Technology)</dd>
+                        <dd>» คอมพิวเตอร์กราฟิก (Computer Graphics)</dd>
+                        <dd>» การปฏิสัมพันธ์ระหว่างมนุษย์กับคอมพิวเตอร์ (Human-Computer Interaction)</dd>
+                        <dd>» เทคโนโลยีและการประยุกต์ใช้อินเทอร์เน็ต (Internet Technology and Applications)</dd>
+                        <dd>» การออกแบบเว็บไซต์ (Website Design)</dd>
+                        <dd>» อัลกอริทึมส์ (Algorithms)</dd>
+
+                        <!--<dt>สาขางานวิจัย</dt>
+      			<dd>&raquo; </dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">International Conferences</h4>
+                        </dd>
+                        <dd>» Monrada Sirimongkol, Piya Thirapanmetee, Sureeporn Nualnim and Sudjai
+                            Ngamsuriyapong.&nbsp;&nbsp;2017.&nbsp;&nbsp;"Development of Learning Media using Augmented
+                            Reality."&nbsp;&nbsp;<b>The 11th National Conference and 2017-1 International Conference on
+                                Applied Computer Technology and Information Systems and 2017-1 National Conference on
+                                Businese Administration.</b>&nbsp;&nbsp;January 25.&nbsp;&nbsp;Southeast Bangkok
+                            College: 6-9.</dd>
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Chananate-1.jpg">
+                <h4 style="margin-left: 9em;">นางสาวชนาเนตร อรรถยุกติ</h4>
+                <p>Ms. Chananate Arthayukti</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>วท.ม. (วิทยาศาสตร์คอมพิวเตอร์) จุฬาลงกรณ์มหาวิทยาลัย <br>
+                            M.Sc. (Computer Science) Chulalongkorn University</dd>
+                        <br>
+                        <dd>บธ.บ. (ระบบสารสนเทศ) สถาบันเทคโนโลยีราชมงคล <br>
+                            B.B.A. (Information System) Rajamangala Institute of Technology</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming)</dd>
+                        <dd>» การวิเคราะห์และออกแบบเชิงวัตถุ (Object-Oriented Analysis and Design)</dd>
+                        <dd>»การเขียนโปรแกรมบนเว็บ (Web Programming)</dd>
+                        <dd>» การโปรแกรมคอมพิวเตอร์ขั้นสูง (Advanced Programming)</dd>
+                        <dd>» วิศวกรรมซอฟต์แวร์ (Software Engineering)</dd>
+                        <!--<dt>สาขางานวิจัย</dt>
+      			<dd>&raquo; </dd>
+                <dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชาญวิทย์ มุสิกะ, ชนาเนตร อรรถยุกติ และพงศกร
+                            อัครธรรมกุล.&nbsp;&nbsp;2562.&nbsp;&nbsp;"ล็อคเกอร์เก็บกุญแจควบคุมการทำงานด้วยอาร์เอฟไอดี."&nbsp;&nbsp;<b>วารสาร
+                                สจล.ชุมพรเขตอุดมศักดิ์ ฉบับวิทยาศาสตร์และเทคโนโลยี.&nbsp;&nbsp;ปีที่
+                                2.</b>&nbsp;&nbsp;ฉบับที่ 1 (มกราคม - ธันวาคม): 50-56.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชนาเนตร อรรถยุกติ, ชาญวิทย์ มุสิกะ, ศรีสุดา สรนันต์ศรี และนพรัตน์ ภัยวิมุติ. 2564.
+                            "ระบบควบคุมการให้อาหารไก่ผ่านสมาร์ทโฟนระบบปฏิบัติการแอนดรอยด์
+                            กรณีศึกษาศูนย์เรียนรู้บ้านท่าทอง อำเภอเดิมบางนางบวช จังหวัดสุพรรณบุรี".
+                            <b>การประชุมวิชาการระดับชาติเชิงสร้างสรรค์ ราชมงคลกรุงเทพวิชาการ 2564 ครั้งที่ 5</b>. 4-6
+                            สิงหาคม. มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ ออนไลน์: 166-172.
+                        </dd>
+                        <dd>» ชาญวิทย์ มุสิกะ, ชนาเนตร อรรถยุกติ, สิริอร นุชผดุง และวัชรพงษ์
+                            ทัพจีน.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบควบคุมเป้าพลิกด้วยไมโครคอนโทรลเลอร์."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25
+                            มกราคม.&nbsp;&nbsp;วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 284-289.</dd>
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Sathira-1.jpg">
+                <h4 style="margin-left: 9em;">นายสถิระ ชัยชนะกลาง</h4>
+                <p>Mr. Satira Chaichanaklang</p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>วท.ม. (การศึกษาวิทยาศาสตร์-คอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง <br>
+                            M.Sc. (Science Education (Computer)) King Mongkut's Institute of Technology Ladkrabang</dd>
+                        <br>
+                        <dd>ค.อ.บ. (อิเล็กทรอนิกส์และคอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง <br>
+                            B.S.Tech.Ed. (Electronics and Computer) King Mongkut's Institute of Technology Ladkrabang
+                        </dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» การจัดระเบียบคอมพิวเตอร์และสถาปัตยกรรม (Computer Organization and Architecture)</dd>
+                        <dd>» ดิจิทัลอิเล็กทรอนิกส์ (Digital Electronics)</dd>
+                        <dd>» ระบบมัลติมีเดียและการประยุกต์ใช้ (Multimedia System and Applications)</dd>
+                        <!--<dt>สาขางานวิจัย</dt>
+      			<dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» สถิระ ชัยชนะกลาง, กฤษณ ปัญญะปูน, พีรพร ดำรงจิตร และมนรดา
+                            ศิริมงคล.&nbsp;&nbsp;2565.&nbsp;&nbsp;“ถังขยะอัตโนมัติด้วยเทคโนโลยีอินเตอร์เน็ตทุกสรรพสิ่ง.”&nbsp;&nbsp;<b>การประชุมวิชาการเสนอผลงานวิจัยระดับชาติและนานาชาติด้านเทคโนโลยีคอมพิวเตอร์ประยุกต์และระบบสารสนเทศ
+                                ครั้งที่ 18 (ACTIS18-2022) และการประชุมวิชาการระดับชาติด้านบริหารธุรกิจ
+                                (NCOBA-2022).</b> มหาวิทยาลัยราชภัฏจันทรเกษม ออนไลน์. 21 กันยายน 2565. หน้า 7-12.</dd>
+
+                        <dd>» สถิระ ชัยชนะกลาง, กุลชยา พงษ์แสวง, พิชญ์สินี สุรินธรรม และน้ำทิพย์
+                            ผุดผ่อง.&nbsp;&nbsp;2560.&nbsp;&nbsp;"เครื่องมือออกแบบวงจรซีเควนเชียล
+                            แบบซิงโครนัส."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25
+                            มกราคม.&nbsp;&nbsp;วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 314-318.</dd>
+
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Chadchai-1.jpg">
+                <h4 style="margin-left: 9em;">นายฉัตรชัย รักถิ่น</h4>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>M.S. (Information System), Ney Jersey Institute of Technology, NJ, U.S.A.</dd>
+                        <br>
+                        <dd>M.S. (Telecommunication and Network Management), Syracuse University, U.S.A.</dd>
+                        <br>
+                        <dd>B.Sc. (Information Technology) มหาวิทยาลัยอัสสัมชัญ <br>
+                            B.Sc. (Information Technology) Assumption University of Thailand</dd>
+                        <!--<dt>ประสบการณ์สอน</dt>
+            	<dd>&raquo;</dd>
+                <dd>&raquo;</dd>
+            <dt>สาขางานวิจัย</dt>
+      			<dd>&raquo;</dd>
+                <dd>&raquo;</dd>
+        	<dt>เอกสารงานวิจัย</dt>
+            	<dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/orasa.jpg">
+                <h4 style="margin-left: 9em;">ผู้ช่วยศาสตราจารย์.ดร.อรสา พัสดุ</h4>
+                <p>Asst. Prof. Orasa Patsadu, Ph.D.<br></p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>ปร.ด. วิทยาการคอมพิวเตอร์ (หลักสูตรภาษาอังกฤษ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>
+                            Ph.D. Computer Science (English Program) King Mongkut's University of Technology Thonburi
+                        </dd>
+                        <br>
+                        <dd>วท.ม. (วิศวกรรมซอฟต์แวร์) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี <br>
+                            M.Sc. (Software Engineering) King Mongkut's University of Technology Thonburi</dd>
+                        <br>
+                        <dd>บธ.บ. (ระบบสารสนเทศ) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ <br>
+                            B.B.A. (Information System) Rajamangala University of Technology Krungthep</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» Data Science</dd>
+                        <dt>สาขางานวิจัย</dt>
+                        <dd>» Data mining</dd>
+                        <dd>» Data Science</dd>
+                        <dd>» Software Engineering</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">International Journals</h4>
+                        </dd>
+
+                        <dd>» Orasa Patsadu*, Kittipat Thepmee, Kantapong Phuengliam, and Monrada
+                            Sirimongkol.&nbsp;&nbsp;2022.&nbsp;&nbsp;"Abnormal Gait Pattern Recognition of Stroke
+                            Patient in Initial Stage Using Smartphone and Hybrid Classification
+                            Methods."&nbsp;&nbsp;<b>Information Technology Journal.</b>&nbsp;&nbsp;Vol. 18, No. 2, July
+                            - December 2022, pp. 21-33.</dd>
+
+                        <dd>» Watanapa, B., Patsadu, O., Dajpratham, P., and Nukoolkit,
+                            C..&nbsp;&nbsp;2018.&nbsp;&nbsp;“Post-Fall Intelligence Supporting Fall Severity Diagnosis
+                            Using Kinect Sensor.”&nbsp;&nbsp;<b>Applied Computational Intelligence and Soft
+                                Computing,</b>&nbsp;&nbsp;Vol. 2018, Article ID 5434897, 15 pages.
+                            https://doi.org/10.1155/2018/5434897.</dd>
+
+                        <dd>» Patsadu, O., Watanapa, B., Dajpratham, P., and Nukoolkit,
+                            C..&nbsp;&nbsp;2018.&nbsp;&nbsp;“Fall Motion Detection with Fall Severity Level Estimation
+                            by Mining Kinect 3D Data Stream.”&nbsp;&nbsp;<b>The International Arab Journal of
+                                Information Technology.</b>&nbsp;&nbsp;ISSN: 1683-3198, Vol. 15, No. 3, pp. 378-388,
+                            2018.</dd>
+
+                        <dd>
+                            <h4 id="tab">วารสารวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» รชต ภัทรบุญศํกดิ์, อาทิตยา รุจิเงิน และอรสา
+                            พัสดุ.&nbsp;&nbsp;2563.&nbsp;&nbsp;"ระบบสำหรับประเมินอาการและระดับความรุนแรงของโรคความดันโลหิตสูงโดยใช้ข้อมูลแวร์เอเบิลเซ็นเซอร์".&nbsp;&nbsp;<b>วารสารวิทยาศาสตร์และเทคโนโลยี
+                                มทร. กรุงเทพ.&nbsp;&nbsp;ปีที่ 1.</b>&nbsp;&nbsp;ฉบับที่ 1: &nbsp;&nbsp;1-8.</dd>
+
+                        <dd>
+                            <h4 id="tab">International Conferences</h4>
+                        </dd>
+                        <dd>» Piya Thirapanmethee, Jirayu Tancharoen, Khananat Sae-Tang,
+                            Nilubon Bootchai, Sirion Nutphadung, and Orasa
+                            Patsadu.&nbsp;&nbsp;2023.&nbsp;&nbsp;"Abnormal Corner of Mouth Fall Detection of Stroke
+                            Patient Using Camera."&nbsp;&nbsp;<b>In Proc. Of the the 19th International Conference on
+                                Computing and Information Technology (IC2IT 2023)</b>, Lecture Notes in Networks and
+                            Systems 679,
+                            https://doi.org/10.1007/978-3-031-30474-3_3, 2023, pp.27-39.</dd>
+
+                        <dd>» Patsadu O. 2018. “Survey of technologies for stroke symptom detection: techniques and
+                            tools”.&nbsp;&nbsp;<b>In Proc. Of the 6th International Conference on Creative
+                                Technology.</b> Cholchan Pattaya resort Pattaya Chonburi Thailand. July 24-26: 124-130.
+                        </dd>
+
+                        <dd>» Tavelertsopon K., Ngeamjuekred P., Bootchai N. and Patsadu O. 2018. “Drowsy driver
+                            detection system of human face using camera and sound notification”.&nbsp;&nbsp;<b>In Proc.
+                                Of the 2nd International MultiConference of Management Science (IMMS) 2018 “The
+                                Management of Digital Contents for Energizing Business Engine”.</b> Bansomdejchaopraya
+                            Rajabhat University. Bangkok. Thailand. July 23-24: 38-47.</dd>
+
+                        <dd>» Patsadu, O., Watanapa, B., and Nukoolkit, C..&nbsp;&nbsp;2017.&nbsp;&nbsp;“A
+                            Multiple-stage Classification of Fall Motions Using Kinect Camera.”&nbsp;&nbsp;<b>In Proc.
+                                Of the 13th, International Conference on Computing and Information Technology.</b> July
+                            6-7, 2017, Arnoma Grand Bangkok Hotel, Bangkok, Thailand, pp. 118-129, 2017.</dd>
+
+                        <dd>» Patsadu, O., Nukoolkit, C., and Watanapa, B..&nbsp;&nbsp;2012.&nbsp;&nbsp;“Survey of Smart
+                            Technologies for Fall Motion Detection: Techniques, Algorithms and Tools.”&nbsp;&nbsp;<b>In
+                                Proc. of the 5th International Conference on Advances in Information
+                                Technology.</b>&nbsp;&nbsp; pp. 137 - 147.</dd>
+
+                        <dd>» Patsadu, O., Nukoolkit, C., and Watanapa, B..&nbsp;&nbsp;2012.&nbsp;&nbsp;“Human Gesture
+                            Recognition Using Kinect Camera.”&nbsp;&nbsp;<b>In Proc. of the 9th International Joint
+                                Conference on Computer Science and Software Engineering.</b> pp. 28 - 32.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» อรสา พัสดุ, วิทิดา จงศุภชัยสิทธิ์ และพรชัย
+                            มงคลนาม.&nbsp;&nbsp;2553.&nbsp;&nbsp;"การวิเคราะห์ความสัมพันธ์ของตัววัดซอฟต์แวร์ชนิดต่าง ๆ
+                            เพื่อศึกษาคุณลักษณะของโปรแกรมตัวอย่าง."&nbsp;&nbsp;<b>The 2010 National Computer Science and
+                                Engineering Conference (NCSEC 2010).</b>&nbsp;&nbsp;17- 19
+                            พฤศจิกายน.&nbsp;&nbsp;โรงแรมเซนทารา ดวงตะวัน จังหวัดเชียงใหม่.</dd>
+
+                        <dd>» อรสา พัสดุ, วิทิดา จงศุภชัยสิทธิ์ และพรชัย
+                            มงคลนาม.&nbsp;&nbsp;2553.&nbsp;&nbsp;"การเปรียบเทียบความซับซ้อนของโอเพ่นซอสซอฟต์แวร์กับโปรแกรมโครงงานของนักศึกษาชั้นปีที่
+                            4 คณะเทคโนโลยีสารสนเทศ
+                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี."&nbsp;&nbsp;<b>การประชุมวิชาการระดับประเทศด้านเทคโนโลยีสารสนเทศ
+                                ครั้งที่ 3 (NCIT2010).</b>&nbsp;&nbsp;28-29 ตุลาคม.&nbsp;&nbsp;โรงแรม ดิเอมเมอรัลด์
+                            กรุงเทพมหานคร.</dd>
+
+                        <dd>» อรสา พัสดุ, วิทิดา จงศุภชัยสิทธิ์ และพรชัย
+                            มงคลนาม.&nbsp;&nbsp;2552.&nbsp;&nbsp;"การศึกษาความซับซ้อนของโปรแกรมภาษา Java โดยใช้ Metric
+                            ต่าง ๆ."&nbsp;&nbsp;<b>การประชุมทางวิชาการ ม.อ. ภูเก็ตวิจัย ครั้งที่ 2
+                                สหวิทยาการเพื่อการพัฒนาอย่างยั่งยืน.</b>&nbsp;&nbsp;มหาวิทยาลัยสงขลานครินทร์
+                            วิทยาเขตภูเก็ต.</dd>
+
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/monrada-1.JPG">
+                <h4 style="margin-left: 9em;">นางสาวมนรดา ศิริมงคล</h4>
+                <p>Ms. Monrada Sirimongkol<br></p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี <br>
+                            M.Sc. (Information Technology) King Mongkut's University of Technology Thonburi</dd>
+                        <br>
+                        <dd>วท.บ. (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ<br>
+                            B.Sc. (Computer Science) Rajamangala University of Technology Krungthep</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» การพัฒนารูปแบบสื่อออนไลน์ (Online Media Development)</dd>
+                        <dd>» คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</dd>
+                        <!--<dt>สาขางานวิจัย</dt>
+      			<dd>&raquo;</dd>
+                <dd>&raquo;</dd>-->
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">International Journals</h4>
+                        </dd>
+
+                        <dd>» Orasa Patsadu*, Kittipat Thepmee, Kantapong Phuengliam, and Monrada
+                            Sirimongkol.&nbsp;&nbsp;2022.&nbsp;&nbsp;"Abnormal Gait Pattern Recognition of Stroke
+                            Patient in Initial Stage Using Smartphone and Hybrid Classification
+                            Methods."&nbsp;&nbsp;<b>Information Technology Journal.</b>&nbsp;&nbsp;Vol. 18, No. 2, July
+                            - December 2022, pp. 21-33.</dd>
+
+                        <dd>
+                            <h4 id="tab">International Conferences</h4>
+                        </dd>
+                        <dd>» Monrada Sirimongkol, Piya Thirapanmetee, Sureeporn Nualnim and Sudjai
+                            Ngamsuriyapong.&nbsp;&nbsp;2017.&nbsp;&nbsp;"Development of Learning Media using Augmented
+                            Reality."&nbsp;&nbsp;<b>The 11th National Conference and 2017-1 International Conference on
+                                Applied Computer Technology and Information Systems and 2017-1 National Conference on
+                                Businese Administration.</b>&nbsp;&nbsp;January 25.&nbsp;&nbsp;Southeast Bangkok
+                            College: 6-9.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» สถิระ ชัยชนะกลาง, กฤษณ ปัญญะปูน, พีรพร ดำรงจิตร และมนรดา
+                            ศิริมงคล.&nbsp;&nbsp;2565.&nbsp;&nbsp;“ถังขยะอัตโนมัติด้วยเทคโนโลยีอินเตอร์เน็ตทุกสรรพสิ่ง.”&nbsp;&nbsp;<b>การประชุมวิชาการเสนอผลงานวิจัยระดับชาติและนานาชาติด้านเทคโนโลยีคอมพิวเตอร์ประยุกต์และระบบสารสนเทศ
+                                ครั้งที่ 18 (ACTIS18-2022) และการประชุมวิชาการระดับชาติด้านบริหารธุรกิจ
+                                (NCOBA-2022).</b> มหาวิทยาลัยราชภัฏจันทรเกษม ออนไลน์. 21 กันยายน 2565. หน้า 7-12.</dd>
+
+                        <dd>» โชติมนต์ นุรารักษ์ ,กชกร เทียนบาง และมนรดา
+                            ศิริมงคล.&nbsp;&nbsp;2564.&nbsp;&nbsp;“ระบบตอบคำถามอัตโนมัติการบริการงานทะเบียนด้วยไลน์แชทบอท.”&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี
+                                ครั้งที่ 5(5th NCOST).</b> คณะวิทยาศาสตร์และเทคโนโลยี
+                            มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา จังหวัดพระนครศรีอยุธยา.
+                            15-16 มกราคม. หน้า 1051-1062.</dd>
+
+                        <dd>» ธนพล อนุเผ่า, นฤวัต ดีสว่างเนตร, มนรดา ศิริมงคล. 2563.
+                            “ระบบสารสนเทศเพื่อการนัดหมายอาจารย์ที่ปรึกษาด้วยโปรแกรมประยุกต์ไลน์”.
+                            การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี ครั้งที่ 4 (4th NCOST).
+                            คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา
+                            จังหวัดพระนครศรีอยุธยา. (ISBN:978-974-625-875-3). 17-18 มกราคม: 195-202.</dd>
+                        <dd>» สรศักดิ์ จิตอารี ,อนุศิฐ พึ่งตระกูล ,มนรดา ศิริมงคล. 2563.
+                            “โปรแกรมประยุกต์ระบบนำทางด้วยเทคโนโลยีโลกเสมือนภายในมหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ”.
+                            <b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี ครั้งที่ 4 (4th NCOST).</b>
+                            คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา
+                            จังหวัดพระนครศรีอยุธยา. (ISBN:978-974-625-875-3). 17-18 มกราคม: 342-350.
+                        </dd>
+                        <dd>» ชัยวัฒน์ พึ่งอุทัย, ธนดล ธนาวิจิตร, มนรดา ศิริมงคล, นิลุบล บุตรไชย. 2562.
+                            “ระบบสารสนเทศซุปเปอร์แพ็ทคลีนิครักษาสัตว์”.
+                            <b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี ครั้งที่ 3 (3rd NCOST)</b>.
+                            คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา
+                            จังหวัดพระนครศรีอยุธยา. 18 มกราคม.
+                        </dd>
+                        <dd>» มนรดา ศิริมงคล, ปิยะ ถิรพันธุ์เมธี, สิริอร นุชผดุง และสุเมธ
+                            ใจเย็น.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบพิพิธภัณฑ์ศิลปินภาพถ่ายโดยใช้เทคโนโลยีเสมือนจริง."&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี
+                                ครั้งที่ 1.</b>&nbsp;&nbsp;19 มกราคม.&nbsp;&nbsp;มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ
+                            ศูนย์พระนครศรีอยุธยา หันตรา: 159-168.</dd>
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/nilubol.jpg">
+                <h4 style="margin-left: 9em;">นางสาวนิลุบล บุตรไชย</h4>
+                <p>Ms. Nilubon Bootchai<br></p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>
+                            M.S. (Computer Science), Syracuse University, U.S.A.</dd>
+                        <br>
+                        <dd>
+                            B.S. (Computer Science), Syracuse University, U.S.A.</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» ผู้ช่วยนักวิเคราะห์ข้อมูลความปลอดภัย</dd>
+                        <dt>สาขางานวิจัย</dt>
+                        <dd>» ความปลอดภัยทางโลกไซเบอร์</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+
+
+                        <dd>
+                            <h4 id="tab">International Conferences</h4>
+                        </dd>
+                        <dd>» Piya Thirapanmethee, Jirayu Tancharoen, Khananat Sae-Tang,
+                            Nilubon Bootchai, Sirion Nutphadung, and Orasa
+                            Patsadu.&nbsp;&nbsp;2023.&nbsp;&nbsp;"Abnormal Corner of Mouth Fall Detection of Stroke
+                            Patient Using Camera."&nbsp;&nbsp;<b>In Proc. Of the the 19th International Conference on
+                                Computing and Information Technology (IC2IT 2023)</b>,&nbsp;&nbsp;Lecture Notes in
+                            Networks and Systems 679,
+                            https://doi.org/10.1007/978-3-031-30474-3_3, 2023, pp.27-39.</dd>
+
+                        <dd>» Tavelertsopon K., Ngeamjuekred P., Bootchai N., Patsadu
+                            O.&nbsp;&nbsp;2018.&nbsp;&nbsp;"Drowsy driver detection system of human face using camera
+                            and sound notification".&nbsp;&nbsp;<b>In Proc. of The 2nd International MultiConference of
+                                Management Science (IMMS) 2018 "The Management of Digital Content for Energizing
+                                Business Engine".</b>&nbsp;&nbsp;July 23-24.&nbsp;&nbsp;Bansomdejchaopraya Rajabhat
+                            University, Bangkok, Thailand: 38-47.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชัยวัฒน์ พึ่งอุทัย, ธนดล ธนาวิจิตร, มนรดา ศิริมงคล, นิลุบล บุตรไชย. 2562.
+                            “ระบบสารสนเทศซุปเปอร์แพ็ทคลีนิครักษาสัตว์”.
+                            <b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี ครั้งที่ 3 (3rd NCOST).</b>
+                            คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา
+                            จังหวัดพระนครศรีอยุธยา. 18 มกราคม.
+                        </dd>
+
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/Supharoek.png">
+                <h4 style="margin-left: 9em;">นายศุภฤกษ์ ฉัตรธนโชติ</h4>
+                <p>Mr. Supharoek Chattanachot<br></p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>
+                            M.Sc. (Information Technology) King Mongkut’s University of Technology Thonburi</dd>
+                        <dd>วท.บ. (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ<br>
+                            B.Sc. (Computer Science) Rajamangala University of Technology Krungthep</dd>
+                        <dt>สาขางานวิจัย</dt>
+                        <dd>» Artificial Intelligence</dd>
+                        <dd>» Programming</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">International Conference</h4>
+                        </dd>
+                        <dd>» K. Lavangnananda and S. Chattanachot.&nbsp;&nbsp;2017.&nbsp;&nbsp; "Study of
+                            discretization methods in classification,"&nbsp;&nbsp;<b>2017 9th International Conference
+                                on Knowledge and Smart Technology (KST).</b>&nbsp;&nbsp;February
+                            1-4.&nbsp;&nbsp;Chonburi: 50-55.</dd>
+
+                    </dl>
+                </div>
+                <br>
+
+                <img id="img" src="../img/lecturer/sirion-2.jpg">
+                <h4 style="margin-left: 9em;">นางสาวสิริอร นุชผดุง</h4>
+                <p>Ms. Sirion Nutphadung<br></p>
+                <div id="font12">
+                    อาจารย์
+                    <dl>
+                        <dt>คุณวุฒิ</dt>
+                        <dd>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี <br>
+                            M.Sc. (Information Technology) King Mongkut's University of Technology Thonburi</dd>
+                        <br>
+                        <dd>วท.บ. (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ<br>
+                            B.Sc. (Computer Science) Rajamangala University of Technology Krungthep</dd>
+                        <dt>ประสบการณ์สอน</dt>
+                        <dd>» อินเทอร์เน็ตในชีวิตประจำวัน (Internets for Everyday Life)</dd>
+                        <dd>» เครือข่ายอินเทอร์เน็ต (Internetworking)</dd>
+                        <dd>» เทคโนโลยีและการประยุกต์ใช้อินเทอร์เน็ต (Internet Technology and Applications)</dd>
+                        <dd>» การออกแบบเว็บไซต์ (Website Design)</dd>
+                        <dd>» คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</dd>
+                        <dt>เอกสารงานวิจัย</dt>
+                        <dd>
+                            <h4 id="tab">International Conferences</h4>
+                        </dd>
+                        <dd>» Piya Thirapanmethee, Jirayu Tancharoen, Khananat Sae-Tang,
+                            Nilubon Bootchai, Sirion Nutphadung, and Orasa
+                            Patsadu.&nbsp;&nbsp;2023.&nbsp;&nbsp;"Abnormal Corner of Mouth Fall Detection of Stroke
+                            Patient Using Camera."&nbsp;&nbsp;<b>In Proc. Of the the 19th International Conference on
+                                Computing and Information Technology (IC2IT 2023)</b>,&nbsp;&nbsp;Lecture Notes in
+                            Networks and Systems 679,
+                            https://doi.org/10.1007/978-3-031-30474-3_3, 2023, pp.27-39.</dd>
+
+                        <dd>
+                            <h4 id="tab">งานประชุมวิชาการระดับชาติ</h4>
+                        </dd>
+                        <dd>» ชาญวิทย์ มุสิกะ, ชนาเนตร อรรถยุกติ, สิริอร นุชผดุง และวัชรพงษ์
+                            ทัพจีน.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบควบคุมเป้าพลิกด้วยไมโครคอนโทรลเลอร์."&nbsp;&nbsp;<b>การประชุมวิชาการระดับนานาชาติและระดับชาติด้านด้านเทคโนโลยีคอมพิวเตอร์และระบบสารสนเทศประยุกต์
+                                และการประชุมวิชาการด้านบริหารธุรกิจ ครั้งที่ 11.</b>&nbsp;&nbsp;25
+                            มกราคม.&nbsp;&nbsp;วิทยาลัยเซาธ์อีสท์บางกอก บางนา กรุงเทพมหานคร: 284-289.</dd>
+
+                        <dd>» มนรดา ศิริมงคล, ปิยะ ถิรพันธุ์เมธี, สิริอร นุชผดุง และสุเมธ
+                            ใจเย็น.&nbsp;&nbsp;2560.&nbsp;&nbsp;"ระบบพิพิธภัณฑ์ศิลปินภาพถ่ายโดยใช้เทคโนโลยีเสมือนจริง."&nbsp;&nbsp;<b>การประชุมวิชาการระดับชาติวิทยาศาสตร์และเทคโนโลยี
+                                ครั้งที่ 1.</b>&nbsp;&nbsp;19 มกราคม.&nbsp;&nbsp;มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ
+                            ศูนย์พระนครศรีอยุธยา หันตรา: 159-168.</dd>
+
+                    </dl>
+                </div>
+                <br>
+
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="container-fluid mt-5" style="background-color:#053361; color:#F3FBFB;">
+            <footer class="py-1">
+                <div class="row g-0">
+                    <div class="col-sm-6 col-md-8">
+                        <div class="container">
+                            <span style="font-weight: bold;">สาขาวิชาวิทยาการคอมพิวเตอร์
+                                /&nbsp;สาขาวิชาเทคโนโลยีสารสนเทศ</span><br><br>
+                            <span>คณะวิทยาศาสตร์และเทคโนโลยี&nbsp;</span><span>ภาควิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์</span><br>
+                            <span>มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ</span> <br>
+                            <span>อาคาร 80 พรรษา บรมราชินีนาถ ชั้น 9-10</span> <br>
+                            <span>เลขที่ 2 ถนนนางลิ้นจี่ แขวงทุ่งมหาเมฆ&nbsp;</span><span>เขตสาทร กรุงเทพมหานคร
+                                10120</span><br>
+                            เบอร์ติดต่อ : 0 2287 9600 ต่อ 7018, 7065<br><br>
+                            อีเมล : csit.utk@mail.rmutk.ac.th <br><br>
+                            <div class="mb-3" style="overflow:hidden;padding-bottom:56.25%;position:relative;height:0;">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3876.0687513966755!2d100.5359415!3d13.7142858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f35d9bdff0d%3A0x8ec79fdd80befa7a!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lij4Liy4LiK4Lih4LiH4LiE4Lil4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1690823430182!5m2!1sth!2sth"
+                                    width="100%" height="100%" frameborder="0" style="left:0; top:0; height:100%;
+                                            width:100%; position:absolute;" allowfullscreen
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <figcaption class="figure-caption text-end">RMUTK</figcaption>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3">
+                                <a href="./index.html">
+                                    <picture>
+                                        <source srcset="" type="image/svg+xml">
+                                        <img src="../img/home/utk.png" class="img-fluid img-thumbnail" alt="home">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="http://www.sci.rmutk.ac.th/">
+                                    <picture>
+                                        <source srcset="" type="image/svg+xml">
+                                        <img src="../img/home/scitec.png" class="img-fluid img-thumbnail" alt="home">
+                                    </picture>
+                                </a>
+                            </li>
+                    
+                    
+                        </ul>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3">
+                                <a href="http://www.oce.rmutk.ac.th/">
+                                    <picture>
+                                        <source srcset="" type="image/svg+xml">
+                                        <img src="../img/home/oce.png" class="img-fluid img-thumbnail" alt="home">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="http://www.ascar.rmutk.ac.th/">
+                                    <picture>
+                                        <source srcset="" type="image/svg+xml">
+                                        <img src="../img/home/logoascar.png" class="img-fluid img-thumbnail" alt="home">
+                                    </picture>
+                                </a>
+                            </li>
+                    
+                        </ul>
+                        <div class="row">
+                            <ul class="list-unstyled d-flex">
+                    
+                                <li class="ms-3">
+                                    <a href="http://reg.rmutk.ac.th/registrar/home.asp">
+                                        <picture>
+                                            <source srcset="" type="image/svg+xml">
+                                            <img src="../img/home/reg.jpg" class="img-fluid img-thumbnail" alt="home">
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="ms-3">
+                                    <a href="http://admissions.rmutk.ac.th/">
+                                        <picture>
+                                            <source srcset="" type="image/svg+xml">
+                                            <img src="../img/home/admission.png" class="img-fluid img-thumbnail" alt="home">
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <p>&copy; 2023 CS &amp; IT RMUTK. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <!-- Link to Bootstrap 5 JS (Popper.js and Bootstrap.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
